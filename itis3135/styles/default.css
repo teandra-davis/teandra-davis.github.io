@@ -1,0 +1,97 @@
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+h1 { 
+    color: #111; 
+    font-family: 'Helvetica Neue', sans-serif; 
+    font-size: 75px; 
+    font-weight: bold; 
+    letter-spacing: -1px; 
+    line-height: 1; 
+    text-align: center; 
+    padding-bottom: 15px;
+}
+
+
+h2 { 
+    color: #111; 
+    /*font-family: 'Open Sans', sans-serif;*/ 
+    font-size: 30px; 
+    font-weight: 300; 
+    line-height: 32px; 
+    margin: 0 0 72px; 
+    text-align: center; 
+}
+    
+    
+p { 
+    color: #685206; 
+    font-family: 'Helvetica Neue', sans-serif; 
+    font-size: 16px; 
+    line-height: 24px; 
+    margin: 0 0 24px;
+    text-align: match-parent;
+}
+
+main {
+    padding: 20px;
+}
+
+header {
+    background-color: #F1F1F1;
+}
+
+.bold-centered {
+    background-color: #F1F1F1;
+    text-align: center;
+    padding: 60px;
+    font-weight: bold;
+    font-size: 35px;
+}
+
+.navigation {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: rgb(41, 40, 40);
+}
+
+/*Taking away the list formatting*/
+.navigation ul {
+    list-style-type: none;
+    font-size: 20px;
+}
+ 
+.navigation a {
+    display: inl;
+    color: white;
+    float: left;
+    text-align: center;
+    padding: 14px 16px; /* 14px 16px*/
+    text-decoration: none;
+}
+  
+/* Change the link color to #111 (black) on hover */
+.navigation li a:hover {
+    background-color: rgb(27, 25, 25);
+}
+
+img {
+    width: 250px;
+    height: auto;
+    float: right;
+    border-radius: 8px;
+    padding: 10px;
+}
+
+footer {
+    text-align: center;
+    background-color: rgb(41, 40, 40);
+    padding: 20px;
+    color: white;
+}
+  
