@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Staatliches&display=swap'); /*Main Font*/
+
 * {
     box-sizing: border-box;
     margin: 0px;
@@ -7,7 +9,7 @@
 
 h1 { 
     color: #111; 
-    font-family: 'Helvetica Neue', sans-serif; 
+    font-family: Staatliches, sans-serif; 
     font-size: 75px; 
     font-weight: bold; 
     letter-spacing: -1px; 
@@ -90,7 +92,7 @@ header {
 }
 
 a:hover {
-    color: white;
+    color: rgb(184, 161, 161);
 }
 
 table {
