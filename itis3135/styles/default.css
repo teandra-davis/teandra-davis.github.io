@@ -89,6 +89,10 @@ header {
     border-radius: 15px;
 }
 
+a:hover {
+    color: white;
+}
+
 table {
     border-collapse: collapse;
     border: 2px solid rgb(27, 25, 25);
