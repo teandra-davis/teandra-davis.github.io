@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang = "en-US">
+
+    <head>
+    <meta charset = "utf-8">
+    <title>Info Page</title>
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Staatliches&display=swap'); /*Main Font*/
+        @import url('https://fonts.googleapis.com/css2?family=Staatliches&display=swap'); /*Header Font*/
+        @import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap'); /*Paragraph Font*/
+
+        * {
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+            font-family: 'Ubuntu', sans-serif;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            background-color: #4a454b;
+            font-family: 'Staatliches', open-sans;
+        }
+
+        .logo {
+            color: white;
+            letter-spacing: 7px;
+            font-size: 22px;
+        }
+
+        .logo img {
+            width: 50px;
+            height: auto;
+            float: left;
+            margin-left: 20px;
+            margin-right: 20px;
+        }
+
+        .logo h1 {
+            display: inline-block;
+            padding: 8px;
+            font-size: 22px;
+        }
+
+        .logo h1 a {
+            text-decoration: none;
+            color: white;
+        }
+
+        .nav-links {
+            display: flex;
+            justify-content: space-around;
+            width: 50%;
+            padding: 20px;
+        }
+
+        .nav-links a {
+            color: white;
+            letter-spacing: 2px;
+            text-decoration: none;
+        }
+
+        .nav-links a:hover {
+            color: rgb(175, 172, 172);
+        }
+
+        .nav-links li {
+            list-style: none;
+        }
+
+        header {
+            text-align: center;
+            color: white;
+            font-size: 30px;
+            font-family: 'Staatliches', sans-serif;
+            padding: 200px;
+            background: url(images/gradient-background.png);
+        }
+
+        footer {
+            background-color: #4a454b;
+            position: fixed-bottom;
+            padding: 15px;
+            text-align: center;
+            font-size: 12px;
+            left: 0;
+            color: white;
+            bottom: 0;
+            width: 100%;
+        }
+
+        h2 {
+            text-align: center;
+        }
+
+        .contact-form {
+            display: inline;
+            border-radius: 20px;
+            border: 12px;
+            background-color: antiquewhite;
+        }
+    </style>
+
+    </head>
+
+    <body>
+        <nav>
+            <div class = "logo">
+                <img src = "images/tailored-deity.png">
+                <h1><a href = "index.html">Tailored Deity</a></h1>
+            </div>
+
+            <ul class = "nav-links">
+                <li>
+                    <a href = "index.html">Home</a>
+                </li>
+
+                <li>
+                    <a href = "brand-tailored-deity.html">Info</a>
+                </li>
+
+                <li>
+                    <a href = "#">Services</a>
+                </li>
+
+                <li>
+                    <a href = "#">About Us</a>
+                </li>
+            </ul>
+        </nav>
+
+        <header>
+            Teandra Davis<br>
+            ITIS 3135
+        </header>
+
+        <main>
+            <br>
+            <h2>Tailored Deity Brand Info</h2>
+
+            <h3>Who Are We</h3>
+            <p>
+                Tailored Deity was originally started as a small start-up project in 2001. After years of expan
+                ding and growing in Charlotte, NC, we as a company strive to entertain, inspire, and inform people
+                around the world through the power of striking and parallel storytelling. Today, we successfully reflect
+                iconic solutions focused on creativity through innovative technologies.
+            </p>
+            <br>
+
+            <h2>Amazing Things:</h2>
+                <ul>
+                    <li>Creative</li>
+                    <li>Innovative</li>
+                    <li>Progressive</li>
+                    <li>Inclusive</li>
+                    <li>Responsible</li>
+                </ul>
+            <br>
+
+            <h2>Client Priority</h2>
+            <p>
+                We strive to provide clever and innovative solutions for our clients, consistently going above and beyond
+                the threshold. 
+            </p>
+            <br>
+
+            <h2>Let's Start Creating</h2>
+            <form class = "contact-form" action = "#">
+                <label for = "name">Name:</label>
+                <input type = "text" name = "name" placeholder = "Name" required><br>
+
+                <label for = "number">Phone Number:</label>
+                <input type = "tel" name = "number" placeholder = "Phone Number" size = "10" required><br>
+
+                <label for = "email">Email Address:</label>
+                <input type = "email" name = "email" email = "Email"><br>
+
+                <label for = "info">Additional Information:</label>
+                <input type = "text" name = "info"><br>
+
+                Do you want to receive email updates?
+                <label for = "updatesy">Yes</label>
+                <input type = "checkbox" name = "updatesy" checked>
+                <label for = "updatesn">No</label>
+                <input type = "checkbox" name = "updatesn"><br>
+            </form>
+        </main>
+
+    </body>
+
+    <footer>
+        Davis Enterprise &copy;
+    </footer>
+</html>

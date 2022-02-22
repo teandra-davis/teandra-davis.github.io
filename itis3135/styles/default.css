@@ -9,7 +9,7 @@
 
 h1 { 
     color: #111; 
-    font-family: Staatliches, sans-serif; 
+    font-family: 'Staatliches', sans-serif; 
     font-size: 75px; 
     font-weight: bold; 
     letter-spacing: -1px; 
@@ -69,7 +69,7 @@ header {
 }
  
 .navigation a {
-    display: inl;
+    display: inline;
     color: white;
     float: left;
     text-align: center;
@@ -125,5 +125,13 @@ footer {
     background-color: rgb(41, 40, 40);
     padding: 20px;
     color: white;
+}
+
+footer a {
+    color: white;
+}
+
+footer a:hover {
+    color: rgb(202, 205, 209);
 }
   
