@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang = "en-US">
+    <head>
+        <meta charset = "utf-8" />
+        <title>Teandra Davis | ITIS3135 | Tyrian Discus First Scripts</title>
+        <link href = "styles/default.css" type = "text/css"  rel = "stylesheet">
+        <script src = "scripts/defaultscripts.js"></script>
+    </head>
+
+    <body>
+        <!--Page has header, main, and footer-->
+        <header>
+            <!--Header has H1 with course and student name-->
+            <h1>Teandra Davis | ITIS3135 | Tyrian Discus</h1>
+            <nav class = "navigation">
+                <ul>
+                    <li><a href = "./">Home</a></li>
+                    <li><a href = "introduction.html">Introduction</a></li>
+                    <li><a href = "contract.html">Contract</a></li>
+                    <li><a href = "tables.html">Table</a></li>
+                    <li><a href = "forms.html">Forms</a></li>
+                    <li><a href = "website_evaluations.html">Website Evaluations</a></li>
+                    <li><a href = "crappywebsite.html">Crappy Website</a></li>
+                    <li><a href = "firstscripts.html">FirstScripts</a></li>
+                    <li><a href = "polygon.html">Polygon</a></li>
+                </ul>
+            </nav>
+        </header>
+        
+        <!--Page has header, main, and footer-->
+        <main>
+                <!--Main starts with H2 tag and has name of the page-->
+                <h2 class = "bold-centered">First Scripts</h2>
+            <div class = "main-padding">
+                <!--Displays the time, day of week, and date (i.e. Today is 3:53pm on Wednesday, 3 November, 2027) as an h3 under 
+                the page name in the main element.-->
+                <!--Give your form fields id's, and use JS to get the text values from them. Give an h3 an id so that you can target
+                 that with your script and populate it with the information the user typed in.-->
+                <h3 id = "current" class = "firstscripts-h3">
+                    <script>
+                        timeAndDate();
+                    </script>
+                </h3>
+                <br>
+                
+                <!--Prompts the user for their name and how they're feeling (using two text fields, not pop ups) with some way for 
+                the user to submit this info.-->
+                <form class = "firstscripts-form">
+                    <label for = "name">Name:</label>
+                    <input type = "text" id = "name" name = "name"><br>
+
+                    <label for = "feeling">How are you feeling?</label>
+                    <input type = "text" id = "feeling" name = "feeling"><br>
+
+                    <button onclick = "welcomeText()" type = "submit" class = "submit-firstscripts" value = "submit" name = "submit">Submit</button>
+                </form>
+                <br>
+
+                <!--Greets the user by their name, mentions their mood:
+                The {name of your company} welcomes you, {user's name} !
+                We're glad you are doing {how they're doing}!-->
+                <p id = "welcomeOutput">
+                    <!--Welcome text displays here-->
+                </p>
+                <br>
+
+                <!--Then have five different buttons that call five different functions of your choice - each button should have the 
+                name of what it does-->
+                <div class = buttons-firstscripts>
+                    <!--add a button element with the onclick attribute of the functions name-->
+                    <button onclick = "guessGame()">Guess the Color</button>
+                    <button onclick = "randFact()">Random Discus Facts</button>
+                    <button onclick = "">Button 3</button>
+                    <button onclick = "">Button 4</button>
+                    <button onclick = "">Button 5</button>
+                </div>
+            </div>
+        </main>
+
+        <!--Page has header, main, and footer-->
+        <footer>
+            <nav>
+                <a href = "https://github.com/teandra-davis">Github</a>  &middot;
+                <a href = "https://github.com/teandra-davis/teandra-davis.github.io">Github.io</a>  &middot;
+                <a href = "https://github.com/teandra-davis/teandra-davis.github.io/tree/main/itis3135">ITIS3135 Github Pages</a>  &middot;
+                <a href = "https://www.codecademy.com/profiles/teandraDavis1403644528">Codecademy</a>  &middot;
+                <a href = "https://www.freecodecamp.org/teandra_davis">FreeCodeCamp</a>  &middot;
+                <a href = "https://jsfiddle.net/user/tdavi181/fiddles">JSFiddle</a>  &middot;
+                <a href = "#">LinkedIn</a>
+            </nav>
+            <br>
+            Designed By Davis Technology &copy; 2022.
+            <br>
+            <br>
+            <a href = "http://validator.w3.org/check?uri=referer" target = "_blank">
+                <img src = "images/button_validation_css.png" alt = "W3 CSS Validation" />
+            </a>
+            <a href = "https://jigsaw.w3.org/css-validator/check/referer" target = "_blank">
+                <img src = "images/button_validation_html5.png" alt = "W3 HTML Validation">
+            </a>
+        </footer>
+    </body>
+    
+</html>
